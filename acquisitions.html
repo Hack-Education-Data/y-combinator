@@ -5,15 +5,15 @@ title: Y Combinator's Acquisitions
 <h2>Y Combinator's Acquisitions</h2>
 
 <!-- Organizations -->
-{% assign investors = site.data.investors %}
-{% assign investors = investors | sort:"Name" %}
+{% assign acquisitions = site.data.acquisitions %}
+{% assign acquisitions = acquisitions | sort:"Name" %}
 
 <!-- Document -->
 
-{% for investor in investors %}
+{% for acquisition in acquisitions %}
 
 <ul>
-<li><strong>{{ investor.Name }}</strong> ({{ investor.Date }})</li>
+<li><strong>{{ acquisition.Name }}</strong> ({{ acquisition.Date }})</li>
 </ul>
 
 {% endfor %}
